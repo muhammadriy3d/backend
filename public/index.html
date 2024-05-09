@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<link rel="stylesheet" href="/style.css" type="text/css">
+		<title>Simple ChatAPI</title>
+	</head>
+
+	<body>
+		<noscript>
+			<div>Please enable javascript in order to run the app and be able to function</div>
+		</noscript>
+		
+		<div style="color: white; font-size: 2em; text-align: center;">
+			<h1>HomePage</h1>
+			<h3 style="font-weight: 400;">
+				Welcome <%= name %>
+			</h3>
+		</div>
+
+		<div id="chatbox" style="color: white; font-size: 1em;"><%= response %></div>
+
+		<form action="/" method="post">
+			<input type="text" name="msg"/>
+			<input type="submit" value="Send" />
+		</form>
+	</body>
+</html>

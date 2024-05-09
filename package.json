@@ -1,0 +1,27 @@
+{
+  "name": "chatapi",
+  "version": "1.0.0",
+  "description": "a simple API for my future AI planning.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "joi": "^17.10.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "eslint": "^9.2.0",
+    "globals": "^15.1.0"
+  }
+}

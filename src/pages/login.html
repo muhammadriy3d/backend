@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link rel="stylesheet" href="/style.css" type="text/css">
+        <title>Simple ChatAPI</title>
+    </head>
+
+    <body>
+        <noscript>
+            <div>Please enable javascript in order to run the app and be able to function</div>
+        </noscript>
+
+        <main id="main-holder">
+            <h1 id="login-header">Login</h1>
+
+            <div id="login-error-msg-holder">
+                <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+            </div>
+
+            <form id="login-form" action="/login" method="post">
+                <!-- <label for="name">
+					<i class="fas fa-user"></i>
+				</label> -->
+                <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+                <!-- <label for="password">
+					<i class="fas fa-lock"></i>
+				</label> -->
+                <input type="password" name="password" id="password-field" class="login-form-field"
+                    placeholder="Password">
+                <input type="submit" value="Login" id="login-form-submit">
+            </form>
+        </main>
+    </body>
+
+</html>
